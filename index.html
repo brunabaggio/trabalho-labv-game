@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./minecraft.ttf" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="snake" width="504" height="504"></canvas>
+        <div class="menu">
+            <h1>SNAKE GAME</h1>
+            <select id="tamanho">
+                <option value="p">Pequeno</option>
+                <option value="m">Médio</option>
+                <option value="g">Grande</option>
+            </select>
+            <button onclick="novoJogo()">INICIAR NOVO JOGO</button>
+            <button id="borda" onclick="borda()">BORDA</button>
+            <h2 id="pontos">Pontos: 0</h2>
+        </div>
+    </div>
+</body>
+</html>
